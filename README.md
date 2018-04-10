@@ -49,3 +49,5 @@ docker-compose.yml
 
 If you need access to a DB (eg Mysql or Maria) you need to add the links to the php container
 
+You might need a special site.conf for the software you run, this container uses php default settings.
+
