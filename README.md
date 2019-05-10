@@ -1,6 +1,6 @@
 # php-fpm-jw
 
-PHP-FPM-Alpine Fork (most recent 7.2) with modules needed for joomla and wordpress
+PHP-FPM-Alpine Fork (most recent 7.x) with modules needed for joomla and wordpress
 
 ## active PHP modules
 * xml
