@@ -7,6 +7,7 @@ RUN apk --update add wget \
     git \
     grep \
     libjpeg \
+    libzip \
     tar \
     re2c \
     bison \
@@ -23,7 +24,9 @@ RUN apk --update add wget \
     libxml2-dev \
     gettext-dev \
     libxslt-dev \
-    curl-dev
+    curl-dev \
+    libzip-dev \
+    zip
 
 RUN docker-php-source extract \
     && docker-php-ext-install -j$(nproc) xml xmlrpc bcmath bz2 ctype curl gd gettext hash iconv json mbstring mysqli opcache pcntl pdo pdo_mysql phar posix zip \
