@@ -7,6 +7,7 @@ RUN apk --update add wget \
     git \
     grep \
     libjpeg \
+    libpng \
     libzip \
     tar \
     re2c \
@@ -26,10 +27,9 @@ RUN apk --update add wget \
     libxslt-dev \
     curl-dev \
     libzip-dev \
-    zip \
-    libfreetype6-dev \
-    libjpeg62-turbo-dev \
     libpng-dev \
+    zip \
+    
 
 RUN docker-php-source extract \
     && docker-php-ext-install -j$(nproc) xml xmlrpc bcmath bz2 ctype curl gd gettext hash iconv json mbstring mysqli opcache pcntl pdo pdo_mysql phar posix zip \
